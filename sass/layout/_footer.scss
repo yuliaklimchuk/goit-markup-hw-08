@@ -1,0 +1,28 @@
+.page-footer
+{
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 57px;
+}
+.footer-box
+{
+    display: flex;
+    align-items: baseline;
+}
+.footer-box__text
+{
+    @include font(14px,700,1.14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    display: block;
+}
+.footer-box__social
+{
+    margin-left: 70px;
+}
+.footer-box__form
+{
+    margin-left: 93px;
+}

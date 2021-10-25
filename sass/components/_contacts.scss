@@ -1,0 +1,21 @@
+.contacts__link
+{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    transition:  color 250ms var(--timing-function) ;
+    display: block;
+    margin-bottom: 9px;
+    &:hover,
+    &:focus
+    {
+        color: var(--secondary-text-color);
+    }
+}
+
+.contacts__link-adress
+{
+    color: #FFFFFF;
+}
