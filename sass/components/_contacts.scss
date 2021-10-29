@@ -1,3 +1,11 @@
+.contacts
+{
+    text-align: center;
+    @media screen and (min-width:1200px)
+    {
+        text-align: start;
+    }
+}
 .contacts__link
 {
     font-size: 14px;
@@ -14,7 +22,10 @@
         color: var(--secondary-text-color);
     }
 }
-
+.contacts__logo
+{
+    margin-bottom: 20px;
+}
 .contacts__link-adress
 {
     color: #FFFFFF;

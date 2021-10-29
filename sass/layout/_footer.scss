@@ -3,12 +3,36 @@
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 57px;
+
 }
 .footer-box
-{
-    display: flex;
-    align-items: baseline;
+{   
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        padding-left: 68px;
+        @media screen and (min-width:1200px)
+        {
+            padding-left: 0;
+        }
+    }
+
 }
+.footer-box__contacts
+{
+    margin-bottom: 60px;
+    @media screen and (min-width:768px)
+    {
+        margin-right: 165px;
+    }
+    @media screen and (min-width:1200px)
+    {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+}
+
 .footer-box__text
 {
     @include font(14px,700,1.14);
@@ -17,12 +41,26 @@
     color: #FFFFFF;
     margin-bottom: 20px;
     display: block;
+    text-align: center;
+    @media screen and (min-width:1200px)
+    {
+        text-align: start;
+    }
 }
+
 .footer-box__social
 {
-    margin-left: 70px;
+    margin-bottom: 60px;
+    @media screen and (min-width:1200px)
+    {
+        margin-left: 70px;
+        margin-bottom: 0;
+    }
 }
 .footer-box__form
 {
-    margin-left: 93px;
+    @media screen and (min-width:768px)
+    {
+        margin-left: 93px;
+    }
 }
