@@ -1,8 +1,11 @@
 .title
 {
-    @include font(36px,700,1.16);
+    @include font(28px,700,1.17);
     text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
     margin-bottom: 50px;
+    @media screen and (min-width:1200px) {
+        @include font(36px,700,1.16);
+    }
 }
