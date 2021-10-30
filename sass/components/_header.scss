@@ -7,7 +7,6 @@
 {
         display: flex;
         align-items: center;
-        //justify-content: space-around;
         padding-top: 10px;
         padding-bottom: 10px;
         flex-wrap: wrap;
@@ -21,11 +20,6 @@
 }
 .header-container__logo
 {
-    margin-right: 115px;
-    @media screen and (min-width:480px)
-    {
-        margin-right: 275px;
-    }
     @media screen and (min-width:768px)
     {
         margin-right: 88px;
@@ -61,6 +55,9 @@
 }
 .mobile-menu__btn
 {
+    position: absolute;
+    top: 5px;
+    right: 10px;
     background-color: transparent;
     width: 40px;
     height: 40px;
