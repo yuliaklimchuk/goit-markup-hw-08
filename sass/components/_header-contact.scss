@@ -1,32 +1,99 @@
 .info-list
-{
+{   
     display: flex;
-    margin-left: auto;
+    flex-direction: column-reverse;
+    @media screen and (min-width:768px)
+    {
+        flex-direction: column;
+    }
+    @media screen and (min-width:1200px)
+    {
+        flex-direction: row;
+        margin-left: auto;
+    }
 }
 .info-list__item{
-    &:not(:last-child)
+    @media screen and (max-width:767px)
     {
-        margin-right: 50px;
+        &:not(:last-child)
+        {
+            margin-bottom: 64px;
+        }
+        &:last-child
+        {
+            margin-bottom: 32px;
+        }
+    }
+    @media screen and (min-width:768px)
+    {
+        &:not(:last-child)
+        {
+            margin-bottom: 10px;
+        }
+    }
+    @media screen and (min-width:1200px)
+    {
+        
+        &:not(:last-child)
+        {
+            margin-right: 50px;
+            margin-bottom: 0;
+        }
     }
 }
 .info-list__link
-{   @include font(14px,500,1.14);
+{   
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
     letter-spacing: 0.02em;
-    color: var(--third-text-color);
     transition: color 250ms var(--timing-function);
     &:hover,
     &:focus
     {
         color: var(--secondary-text-color);
     }
+    @media screen and (min-width:1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
+.mail-link
+{
+    @include font(24px,500,1.6);
+    color: var(--third-text-color);
+    @media screen and (min-width:768px)
+    {
+        @include font(12px,500,1.16);
+    }
+    @media screen and (min-width:1200px)
+    {
+        @include font(14px,500,1.14);
+    }
+}
+.tel-link
+{
+    @include font(34px,500,1.15);
+    color: var(--secondary-text-color);
+    @media screen and (min-width:768px)
+    {
+        @include font(12px,500,1.16);
+        color: var(--third-text-color);
+    }
+    @media screen and (min-width:1200px)
+    {
+        @include font(14px,500,1.14);
+    }
+}
+
+
 .info-list__icon
 {
-    display:inline-block;
-    margin-right: 10px;
-    fill: currentColor;
+    display: none;
+    @media screen and (min-width:768px)
+    {
+        display:inline-block;
+        margin-right: 10px;
+        fill: currentColor;
+    }
 }
+
