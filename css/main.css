@@ -1019,12 +1019,31 @@ body {
 
 .portfolio-buttons-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-bottom: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-buttons-list {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-list-button-item {
+  margin-bottom: 15px;
 }
 
 .portfolio-list-button-item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list-button-item {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-button-item {
@@ -1049,30 +1068,61 @@ body {
 }
 
 .portfolio-content-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-content-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-content-list {
+    margin-top: 50px;
+  }
 }
 
 .portfolio-content-item {
-  flex-basis: calc(100% / 3 - 30px);
-}
-
-.portfolio-content-item:not(:nth-child(3n-2)) {
-  margin-left: 30px;
-}
-
-.portfolio-content-item:not(:nth-child(n+7)) {
   margin-bottom: 30px;
 }
 
-.portfolio-content-item:hover {
+.portfolio-content-item:hover, .portfolio-content-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-content-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-content-item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .portfolio-description {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-content-item:first-child .portfolio-description {
+    height: 147px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-content-item:first-child .portfolio-description {
+    height: auto;
+  }
 }
 
 .portfolio-content-title {
