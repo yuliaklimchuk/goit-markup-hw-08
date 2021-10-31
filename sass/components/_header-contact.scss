@@ -47,6 +47,7 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.02em;
+    color: var(--third-text-color);
     transition: color 250ms var(--timing-function);
     &:hover,
     &:focus
@@ -61,7 +62,6 @@
 .mail-link
 {
     @include font(24px,500,1.6);
-    color: var(--third-text-color);
     @media screen and (min-width:768px)
     {
         @include font(12px,500,1.16);
@@ -74,7 +74,6 @@
 .tel-link
 {
     @include font(34px,500,1.15);
-    color: var(--secondary-text-color);
     @media screen and (min-width:768px)
     {
         @include font(12px,500,1.16);
