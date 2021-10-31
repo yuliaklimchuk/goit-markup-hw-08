@@ -527,8 +527,7 @@ body {
   font-weight: 900;
   line-height: 1.6;
   margin: 0px auto 30px auto;
-  padding-left: 13px;
-  padding-right: 13px;
+  max-width: 360px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -540,7 +539,7 @@ body {
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
-    max-width: 696px;
+    max-width: 670px;
   }
 }
 
