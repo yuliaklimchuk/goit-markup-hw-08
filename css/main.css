@@ -178,7 +178,7 @@ body {
 .mobile-menu__btn {
   position: absolute;
   top: 5px;
-  right: 20px;
+  right: 15px;
   z-index: 5;
   background-color: transparent;
   width: 40px;
@@ -189,6 +189,13 @@ body {
 
 .mobile-menu__btn:hover, .mobile-menu__btn:focus {
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile-menu__btn {
+    right: 50%;
+    transform: translate(230px);
+  }
 }
 
 @media screen and (min-width: 768px) {

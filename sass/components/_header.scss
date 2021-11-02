@@ -59,7 +59,7 @@
 {
     position: absolute;
     top: 5px;
-    right: 20px;
+    right: 15px;
     z-index: 5;
     background-color: transparent;
     width: 40px;
@@ -70,6 +70,11 @@
     &:focus
     {
         color: var(--secondary-text-color);
+    }
+    @media screen and (min-width:480px)and (max-width:767px)
+    {
+        right: 50%;
+        transform: translate(230px);
     }
     @media screen and (min-width:768px)
     {
